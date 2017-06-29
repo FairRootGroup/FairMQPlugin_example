@@ -1,5 +1,5 @@
 ################################################################################
-#    Copyright (C) 2017 GSI Helmholtzzentrum fuer Schwerionenforschung GmbH    #
+#    Copyright (C) 2014 GSI Helmholtzzentrum fuer Schwerionenforschung GmbH    #
 #                                                                              #
 #              This software is distributed under the terms of the             #
 #         GNU Lesser General Public Licence version 3 (LGPL) version 3,        #
@@ -16,7 +16,7 @@ if(FAIRROOTPATH)
 else()
     message(FATAL "Specify -DFAIRROOTPATH to FairRoot installation!")
 endif()
-find_package(Boost 1.61 COMPONENTS thread system timer program_options random filesystem chrono exception regex serialization log log_setup atomic date_time)
+find_package(Boost 1.61 COMPONENTS program_options log)
 
 set(plugin FairMQPlugin_example)
 set(VERSION_MAJOR 1)
