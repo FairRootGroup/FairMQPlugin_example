@@ -23,7 +23,7 @@ class ExamplePlugin : public fair::mq::Plugin
         const fair::mq::Plugin::Version version,
         const std::string maintainer,
         const std::string homepage,
-        fair::mq::PluginServices& pluginServices)
+        fair::mq::PluginServices* pluginServices)
     : fair::mq::Plugin(name, version, maintainer, homepage, pluginServices)
     {
         SubscribeToDeviceStateChange(
