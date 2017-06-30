@@ -10,6 +10,7 @@ cmake_minimum_required(VERSION 3.7)
 cmake_policy(SET CMP0028 NEW)
 
 project(ExamplePlugin LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 11)
 
 if(FAIRROOTPATH)
     include(${FAIRROOTPATH}/include/cmake/FairMQ.cmake)
